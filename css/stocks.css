@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap'); 
+.container-fluid {
+    height: 100vh;
+    background-color: #c8d8e4;
+}
+
+
+.invHeader {
+    height: 10vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px !important;
+}
+
+.invHeader p {
+    margin: 0px !important;
+}
+
+.backBtn {
+    background-color: #c8d8e4;
+    border-width: 3px;
+    border-color: #2b6777;
+    border-radius: 5px;
+    color:#2b6777;
+    transition: .2s ease-out;
+}
+
+.backBtn:hover {
+    background-color: #41a1bb;
+    transition: .2s ease-in;
+}
+
+#addProductBtn {
+    border: none !important;
+    background-color: #2b6777;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#updateStockBtn {
+    border: none !important;
+    background-color: #52ab98;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.addNewProduct {
+    font-family: 'Bebas Neue', cursive;
+}
+
+#productNameList {
+    /* text-align: center !important; */
+    padding: 0 !important;
+    padding-left: 30px !important;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#productQTYList {
+    text-align: center !important;
+    padding: 0 !important;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#productOrgPriceList {
+    text-align: center !important;
+    padding: 0 !important;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#productNewPriceList {
+    text-align: center !important;
+    padding: 0 !important;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#newAddedDates {
+    text-align: center !important;
+    padding: 0 !important;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#inventoryList {
+    width: 100% !important;
+    overflow-y:auto !important;
+    height: 50vh !important;
+}
+
+.invProductHeader {
+    border-bottom: 1px solid #c8d8e4;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bolder !important;
+}
+
+.inputArea {
+    border-radius: 5px;
+    text-align: center;
+}
+
+

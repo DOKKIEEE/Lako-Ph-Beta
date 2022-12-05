@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap'); 
+
+.container-fluid {
+    height: 100vh;
+    background-color: #c8d8e4;
+}
+.subPanel {
+    background-color: #2b6777;
+    border: 10px solid #c8d8e4;
+}
+
+#productNameList {
+    text-align: start !important;
+    padding-left: 50px !important;
+}
+
+.backBtn {
+    background-color: #c8d8e4;
+    border-width: 3px;
+    border-color:  #2b6777;
+    border-radius: 5px;
+    color:#2b6777;
+    transition: .2s ease-out;
+}
+
+.backBtn:hover {
+    background-color: #41a1bb;
+    transition: .2s ease-in;
+}
+
+.itemListHeader {
+    height: 10vh;
+    height: 10vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    background-color:  #2b6777;
+}
+
+
+.posCashierCoounter {
+    height: 100vh;
+}
+
+.posHeader {
+    height: 10vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.posHeader p {
+    margin: 0px !important;
+}
+
+.inputProduct {
+    height: 10vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.productList {
+    height: 50vh;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+#sellProduct {
+    border-radius: 8px !important;
+   
+}
+
+#inputQTY {
+    border-radius: 8px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#inputPayments {
+    width: 80px !important;
+}
+.itemPadding {
+    padding-left: 30px !important;
+}
+#itemNametoALign {
+    text-align: start !important;
+    padding-left: 30px !important;
+}
+
+#productListID {
+    margin-top: 5px !important;
+}
+#productListInput {
+    height: 45vh;
+    overflow-y: auto;  
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.productCalc {
+    height: 30vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#addBtn {
+    height: 50px;
+    width: 70px;
+    color: white;
+    background-color: #2b6777;
+    border:none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .1s ease-out;
+}
+
+#addBtn:hover {
+    background-color: #3c97b0;
+    transition: .1s ease-in;
+}
+
+
+/* PRODUCT CALCULATION SECTION */
+
+.calcHeader {
+    height: 5vh;
+    font-family: 'Noto Sans', sans-serif;
+    border-top: 1px solid #c8d8e4;
+    padding-top: 5px;
+}
+
+.listHeader {
+    border-bottom: 1px solid #c8d8e4;
+    padding-bottom: 5px;
+}
+
+.calcTotal {
+    height: 5vh;
+}
+
+.calcPayment {
+    height: 5vh;
+}
+
+.calcChange {
+    height: 5vh;
+}
+
+#submitBtn {
+    height: 45px;
+    width: 260px;
+    border:none;
+    background-color: #2b6777;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: .1s ease-out;
+}
+
+#submitBtn:hover {
+    background-color: #3c97b0;
+    transition: .1s ease-in;
+}
+
+

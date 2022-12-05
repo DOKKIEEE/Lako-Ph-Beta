@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap'); 
+
+.container-fluid {
+    min-height: 100vh;
+    background-color: #c8d8e4;
+}
+
+
+.backBtn {
+    background-color: #c8d8e4;
+    border-width: 3px;
+    border-color:  #2b6777;
+    border-radius: 5px;
+    color:#2b6777;
+    transition: .2s ease-out;
+}
+
+.backBtn:hover {
+    background-color: #41a1bb;
+    transition: .2s ease-in;
+}
+
+.salesHeader {
+    height: 10vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px !important;
+}
+
+.salesHeader p {
+    margin: 0px !important;
+}
+
+.salesTableHeader {
+    border-bottom: 1px solid #2b6777;
+    font-family: 'Noto Sans', sans-serif;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.dataContainer {
+    height: 60vh;
+    overflow-y:auto !important;
+}
+
+#productNameDisplay {
+    text-align: center;
+}
+
+.totalSummary {
+    height: 20vh;
+    border-top: 1px solid #2b6777;
+    padding-top: 10px;
+    font-weight: bolder !important;
+}
+
+
+.toCenter {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    
+}

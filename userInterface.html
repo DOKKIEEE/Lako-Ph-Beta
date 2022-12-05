@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/userInterface.css">
+    <title>LAKO INTERFACE</title>
+</head>
+<body>
+
+    <div class="mainContainer container-fluid">
+
+<!-- this is the header -->
+        <div class="row header d-flex align-content-center">
+            <div class="col text-center text-black d-flex flex-row justify-content-center align-items-center">
+                <!-- <img src="TEST IMAGES/lakomain.png" alt="" class="lakoimg"> -->
+                <p class="lakop d-flex justify-content-center">
+                    <img class="w-50 d-block d-sm-none" src="images/lako logov.png" alt="">
+                    <img class="w-50 d-none d-sm-block" src="images/lako logo.png" alt="">
+                </p>
+            </div>
+        </div>
+        <div class="row spacer"></div>
+
+ <!-- feature boxes        -->
+        <div class="row text-center featuresList">
+
+            <div class="col-6 col-lg-3 d-flex justify-content-center align-items-center featureBtn">
+                <a class="text-decoration-none" href="pos.html">
+                    
+                    <h2 class="iconText d-flex flex-column" >
+                        <img class="featureIcons" src="TEST IMAGES/npos2.png" alt="">
+                        POS
+                    </h2>
+                </a>
+            </div>
+
+            <div class="col-6 col-lg-3 d-flex justify-content-center align-items-center featureBtn">               
+                <a class="text-decoration-none" href="stocks.html">
+                    <span class="badge" id="showBadge">low stock</span>
+
+                   
+                    <h2 class="iconText d-flex flex-column" >
+                        <img class="featureIcons" src="TEST IMAGES/nstocks1.png" alt="" id="appendBadge">
+                        STOCKS
+                    </h2>
+                </a>
+            </div>
+
+            <div class="col-6 col-lg-3 d-flex justify-content-center align-items-center mt-4 mt-lg-0 featureBtn">
+                <a class="text-decoration-none" href="transactions.html">
+                    <h4 class="iconText d-flex flex-column" >
+                        <img class="featureIcons" src="TEST IMAGES/nTRANSCATION ICON.png" alt="">
+                        TRANSACTIONS
+                    </h4>
+                </a>
+            </div>
+
+            <div class="col-6 col-lg-3 d-flex flex-column justify-content-center align-items-center mt-4 mt-lg-0 featureBtn">
+                <a class="text-decoration-none" href="salesreport.html">
+                    
+                    <h2 class="iconText d-flex flex-column" >
+                        <img class="featureIcons" src="TEST IMAGES/nsales.png" alt="">
+                        SALES
+                    </h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/userInterface.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32319c4724.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pos.css">
+    <title>POS-CASHIER INTERFACE</title>
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-sm subPanel d-sm-block d-none">
+                <div class="row itemListHeader">
+                    <div class="col text-center text-light">
+                        <!-- PRODUCT LIST/STOCK -->
+                    </div>
+                </div>
+                <div class="row d-none">
+                    <div class="col text-center" id="stockProduct">
+                        <!-- left side panel -->
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+<!-- main POS Feature -->
+            <div class="col-sm-6 posCashierCounter">
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-start align-items-center">
+                        <a href="userInterface.html">
+                            <button class="backBtn">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-8 posHeader d-flex justify-content-center align-items-center text-black">
+                        <p>LAKO COUNTER</p>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+<!-- INPUT PRODUCT TO BE SOLD -->
+                <div class="row inputProduct">
+                    <div class="col-7 text-black ps-3">
+                        <form action="#" method="" class="d-flex flex-column" id="resetForm1">
+                            <label for="browser">ADD A PRODUCT</label>
+                            <input list="sellProducts" name="sellProduct" id="sellProduct" required>
+                            <datalist id="sellProducts" oninput="picksProduct()">
+                                <!-- <option value="canned tuna">
+                                <option value="canned sardines">
+                                <option value="egg">
+                                <option value="coffee">
+                                <option value="oil"> -->
+                            </datalist>
+                          </form>               
+                    </div>
+                    <div class="col-2 text-black">
+                        <form action="#" method="" id="resetForm2" class="d-flex flex-column justify-content-center align-items-center">
+                            <label for="inputQTY">QTY</label>
+                            <input class="w-100 text-center" type="text" placeholder="0" id="inputQTY" required>
+                        </form>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <form action="#" method="">
+                            <button id="addBtn">A D D</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row productList">
+                    <div class="col text-black">
+                        <div class="row text-center fw-bold listHeader">
+                            <div class="col-7 text-start itemPadding">
+                                ITEMS/PROD.NAME
+                            </div>
+                            <div class="col-2">
+                                QTY
+                            </div>
+                            <div class="col-3">
+                                PRICE
+                            </div>
+                        </div>
+ <!-- for javascript appendchilds from inputProduct -->
+                        <div class="row text-center">
+                            <div class="col" id="productListInput">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- for javascript sell calculator -->
+                <div class="row productCalc">
+                    <div class="col">
+                        <div class="row text-center calcHeader text-black fw-bold">
+                            <div class="col-5 text-start ps-4">
+                                TOTAL
+                            </div>
+                            <div class="col-3">
+                                QTY
+                            </div>
+                            <div class="col-4">
+                                PRICE
+                            </div>
+                        </div>
+
+                        <!-- bill summary -->
+                        <div class="row text-center calcTotal text-black">
+                            <div class="col-5">
+                                
+                            </div>
+                            <div class="col-3">
+                                <h6 id="totalItemSold">0</h6>
+                            </div>
+                            <div class="col-4">
+                                <h6 id="totalPrice">₱ 0.00</h6>
+                            </div>
+                        </div>
+
+                        <!-- given money -->
+                        <div class="row text-center calcPayment text-black">
+                            <div class="col-5 text-start fw-bold ps-4">
+                                PAYMENT
+                            </div>
+                            <div class="col-3">
+                                <form action="#" method="" >
+                                    <input oninput="inputBills()" type="number" placeholder="bills" class="text-center" id="inputPayments">
+                                </form>
+                            </div>
+                            <div class="col-4">
+                                <h6 id="payment">₱0.00</h6>
+                            </div>
+                        </div>
+
+                        <!-- change -->
+                        <div class="row text-center calcChange text-black">
+                            <div class="col-5 text-start fw-bold ps-4">
+                                CHANGE
+                            </div>
+                            <div class="col-3"></div>
+                            <div class="col-4">
+                                <h6 id="buyersChange">₱ 0.00</h6>
+                            </div>
+                        </div>
+                        <!-- submit button -->
+                        <div class="row">
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <form action="#" method="">
+                                    <button id="submitBtn">S U B M I T</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/pos2.js"></script>
+</body>
+</html>

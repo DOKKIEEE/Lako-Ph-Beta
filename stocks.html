@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32319c4724.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stocks.css">
+    <title>MY STOCKS</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 d-flex justify-content-start align-items-center">
+                <a href="userInterface.html">
+                    <button class="backBtn">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="col-8 invHeader d-flex justify-content-center align-items-center text-black">
+                <p>LAKO STOCKS</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+<!-- adding new product on inventory -->
+        <div class="row addNewProduct">
+            <div class="col-12 text-sm-start text-center text-black">
+                <h5>ADD NEW PRODUCT</h5>
+            </div>
+            <div class="col-6 col-sm-3">
+                <form action="#" method="">
+                    <input type="text" placeholder="PRODUCT NAME" class="fs-6 w-100 text-start inputArea" id="addProductName" oninput="disableAddBtn()" required>
+                </form>
+            </div>
+            <div class="col-2 col-sm-1">
+                <form action="#" method="">
+                    <input type="number" placeholder="QTY" class="fs-6 w-100 text-center inputArea" id="addProductQTY" required>
+                </form>
+            </div>
+            <div class="col-2 col-sm-1">
+                <form action="#" method="">
+                    <input type="number" placeholder="PRICE" class="fs-6 w-100 text-center inputArea" id="addProductOrgPrice" required>
+                </form>
+            </div>
+            <div class="col-2 col-sm-1">
+                <form action="#" method="">
+                    <input type="number" placeholder="R.PRICE" class="fs-6 w-100 text-center inputArea" id="addProductNewPrice" required>
+                </form>
+            </div>
+            <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+                <form action="#" method="">
+                    <button id="addProductBtn" class="w-100">A D D</button>
+                </form>
+            </div>
+            <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+                <form action="#" method="">
+                    <button id="updateStockBtn" class="w-100">U P D A T E</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row invProductHeader text-center mt-4 text-black">
+            <div class="col-3 ps-3 ps-sm-3 text-start h6">PROUCT NAME</div>
+            <div class="col-2 p-0 h6">QTY</div>
+            <div class="col-2 p-0 h6">PRICE</div>
+            <div class="col-2 p-0 h6">RESELL PRICE</div>
+            <div class="col-3 p-0 h6">DATE</div>
+        </div>
+
+        <div class="row listContainer mt-2">
+            <div class="col text-black mt-1 " id="inventoryList">
+
+            </div>
+            <!-- this is whrere inventory list appended -->
+        </div>
+    </div>
+    <script src="js/stocks.js"></script>
+</body>
+</html>
