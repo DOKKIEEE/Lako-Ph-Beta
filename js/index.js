@@ -36,7 +36,6 @@ passwordErrorMsg.style.color = "red";
          errorUsernameDisplay.removeChild(usernameErrorMsg);
          errorPasswordDisplay.appendChild(passwordErrorMsg);
       } else if (userNameInput === registeredUsername && userPasswordInput === registeredUserPass){
-         setTimeout(function(){ window.location.href = "https://dokkieee.github.io/LakoPh/userInterface.html"; }, 100);
-         console.log("login successfull");
+         setTimeout(function(){ window.location.href = "https://dokkieee.github.io/Lako-Ph-Beta/userInterface.html"; }, 100);
       }
    }
