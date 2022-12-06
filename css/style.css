@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mitr:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: #47aeca;
+}
+
+.navbar-nav a {
+    font-weight: bold;
+    transition: .2s ease-out;
+}
+
+.navbar-nav a:hover {
+    background-color: #6ecae3;
+    transition: .2s ease-in;
+    border-radius: 10px;
+}
+
+.navLogo {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.loginBtn {
+    background-color: #55dafe;
+    border-radius: 10px;
+    transition: .1s ease-out;
+}
+
+.loginBtn:hover {
+    background-color: #6ecae3;
+    transition: .1s ease-in;
+}
+
+.hero {
+    height: 90vh;
+}
+
+.lakoMain {
+    font-size: 7rem;
+    font-family: 'Mitr', sans-serif;
+}
+
+.gif {
+    width: 100px;
+    height: 100px;
+    margin-top: 36px;
+    border-radius: 100%;
+    border: 5px solid rgb(191, 181, 181);
+    background-color: #47aeca;
+    background-image: url(https://media3.giphy.com/media/YSlYcWllIZeTgdtODL/giphy.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-blend-mode:overlay;
+}
+
+.tagLine {
+    font-size: 2.7rem;
+}
+
+.featuresSection {
+    height: auto;
+}
+
+.featureImg {
+    width: 250px;
+}
+
+.aboutusSection {
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #47aeca;
+}
+
+i {
+    font-size: 2.2rem;
+}
+
+.teamLogo {
+    width: 200px;
+}
+
+.aboutUsH5 {
+    font-weight: bold;
+}
+
+.pContent {
+    width: 370px;
+}
+
+.testimonialSection {
+    height: auto;
+}
+
+.testimonialImg {
+    width: 200px;
+}
+
+.contact-input {
+    border: 1px solid #53c6e6;
+}
+
+.contact-input:hover {
+    border: 1px solid #034254;
+}
+
+.messageBtn {
+    background-color: #47aeca;
+    border: 1px solid #53c6e6;
+    border-radius: 5px;
+    height: 35px;
+    transition: .1s ease-out;
+}
+
+.messageBtn:hover {
+    background-color: #6ecae3;
+    transition: .1s ease-in;
+}
+
+.loginMain  {
+    height: 100vh;
+    width: 100vw;
+}
+
+.loginBtnSecured {
+    height: 35px;
+    background-color: #3da9c7;
+    border: 1px solid #47aeca;
+    border-radius: 5px;
+    transition: .2s ease-out;
+}
+
+.loginBtnSecured:hover {
+    background-color: #6ecae3;
+    transition: .2s ease-in;
+}
+
+.loginForm  {
+    height: 450px;
+    width: 400px;
+    border: 2px solid #3c9eb9;
+}
+
+.loginForm a:hover {
+    color: #55dafe;
+    transition: .2s ease-in;
+}
+
+.loginForm input {
+    font-size: .9rem;
+    border: 1px solid #47aeca;
+    transition: .3s ease-out;
+}
+
+.loginForm input:hover {
+    background-color: #b1e8f7;
+    border: 2px solid #5ac1dd;
+    transition: .3s ease-in;
+}
+
+.gifLogin {
+    height: 80px;
+    width: 80px;
+    background-color: #6ecae3;
+}
+
+.usernameDiv {
+    height: 58px;
+}
+
+.usernameError{
+    text-align: center;
+    font-size: .8rem;
+}
+
+.passwordDiv {
+    height: 58px;
+}
+
+.passwordError {
+    text-align: center;
+    font-size: .8rem;
+}

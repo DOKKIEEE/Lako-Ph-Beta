@@ -36,6 +36,12 @@
     color: white;
     border-radius: 5px;
     height: 30px;
+    transition: .1s ease-out;
+}
+
+#addProductBtn:hover {
+    background-color: #41a1bb;
+    transition: .2s ease-in;
 }
 
 #updateStockBtn {
@@ -44,6 +50,12 @@
     color: white;
     border-radius: 5px;
     height: 30px;
+    transition: .1s ease-out;
+}
+
+#updateStockBtn:hover {
+    background-color: #41a1bb;
+    transition: .2s ease-in;
 }
 
 .addNewProduct {

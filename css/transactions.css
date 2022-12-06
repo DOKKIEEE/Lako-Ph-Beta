@@ -13,9 +13,9 @@
 .backBtn {
     background-color: #c8d8e4;
     border-width: 3px;
-    border-color: rgb(43, 103, 119);
+    border-color:  #2b6777;
     border-radius: 5px;
-    color: #2b6777;
+    color:#2b6777;
     transition: .2s ease-out;
 }
 
